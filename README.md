@@ -12,8 +12,10 @@ This version adds necessary codes, views and database tables for supporting User
 You must be familiar with laravel. This distribution is intended for developers only
 
 ## Installation
-Pull it using git clone. Run composer install/update. rename the .env.example to .env then edit the .env file to point it to your database. 
-Then run php artisan migrate in order to migrate the database structures.
+Pull it using git clone. Run `composer install` or `composer update` . rename the `.env.example` to `.env` then edit the `.env` file to point it to your database. 
+
+Then run `php artisan migrate` command in order to migrate the database structures.
+
 You should be able to see a welcome page when you point your web browser to the public directory
 
 ## Official Laravel Documentation
