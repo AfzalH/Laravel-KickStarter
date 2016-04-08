@@ -30,6 +30,34 @@ Login using that info and go to users->click on user name->click on edit and set
 
 That users will be treated as `super user` and be able to perform super admin tasks
 
+## How to use the *Permission*
+
+You can assign roles to different permission and users to different permissions.
+As a result the user will be entitled to some of the permissions via roles.
+Finally, You'll have to use `permission aliases` in your code like below:
+
+Inside Blade:
+
+```blade
+@can('permission_alias')
+<h2>This part is visible only to the users having permission_alias permission
+@endcan
+
+another way
+
+@if(\Gate::allows('super_admin_task'))
+<h2>Super admin task</h2>
+@endif
+```
+
+Inside Controller
+
+```php
+if(\Gate::denies('super_admin_task')) // here super_admin_task is a permission alias
+{
+	return Redirect::to('/');
+}
+```
 
 ## Official Laravel Documentation
 
