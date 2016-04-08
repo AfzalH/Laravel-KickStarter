@@ -14,11 +14,11 @@ You must be familiar with laravel. This distribution is intended for developers 
 ## Installation
 Pull it using git clone. 
 
-Run `composer install` or `composer update` .
-
 Copy and rename the `.env.example` to `.env` then edit the `.env` file to point it to your database. 
 
 Also set `MAIL_DRIVER=log` in the `.env` file
+
+Run `composer install` and `composer update` (if required).
 
 Then run `php artisan migrate` and `php artisan key:generate` command in order to migrate the database structures.
 
