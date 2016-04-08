@@ -38,7 +38,7 @@ Finally, You'll have to use `permission aliases` in your code like below:
 
 Inside Blade:
 
-```blade
+```php
 @can('permission_alias')
 <h2>This part is visible only to the users having permission_alias permission
 @endcan
