@@ -220,10 +220,6 @@ desired effect
                         </li>
                         @endcan
                     @endif
-
-                    @if(\Gate::allows('super'))
-                        <h2>super admin</h2>
-                        @endif
                 </ul>
         </section>
         <!-- /.sidebar -->
