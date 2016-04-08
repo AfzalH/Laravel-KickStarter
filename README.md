@@ -12,11 +12,24 @@ This version adds necessary codes, views and database tables for supporting User
 You must be familiar with laravel. This distribution is intended for developers only
 
 ## Installation
-Pull it using git clone. Run `composer install` or `composer update` . rename the `.env.example` to `.env` then edit the `.env` file to point it to your database. 
+Pull it using git clone. 
 
-Then run `php artisan migrate` command in order to migrate the database structures.
+Run `composer install` or `composer update` .
+
+Copy and rename the `.env.example` to `.env` then edit the `.env` file to point it to your database. 
+
+Also set `MAIL_DRIVER=log` in the `.env` file
+
+Then run `php artisan migrate` and `php artisan key:generate` command in order to migrate the database structures.
 
 You should be able to see a welcome page when you point your web browser to the public directory
+
+The person who tries to login for the first time will be prompted with the default email/password below the login screen.
+
+Login using that info and go to users->click on user name->click on edit and set your Name, Email and Password
+
+That users will be treated as `super user` and be able to perform super admin tasks
+
 
 ## Official Laravel Documentation
 

@@ -31,7 +31,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/', function () {
         return view('welcome');
     });
-    Route::auth();
     Route::get('login22', 'Auth\AuthController@showLoginForm')->name('login');
     Route::post('login22', 'Auth\AuthController@login')->name('login.do');
     Route::get('logout22', 'Auth\AuthController@logout')->name('logout');
